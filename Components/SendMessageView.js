@@ -6,79 +6,65 @@ import DoubleTick from "../Components/doubleTickWhatsapp"
 const SendMessageView = ({ tetDikhana }) => {
     return (
 
-        <View style={{ marginVertical: 5, height: "auto", width: "auto", maxWidth: 200, marginLeft: 8, alignItems: "flex-start", backgroundColor: "red" }}>
+
+//Ata Bhai's Method
+// <View style={{width:"100%"}}>
+
+//     <View style={{maxWidth:"70%",backgroundColor:"grey"}}>
+
+// <View style={{minHeight:25,marginBottom:10,backgroundColor:"orange"}}>
+//     <Text>jskacasckascacacaccacsacasascascsascacasscascascscaccsaassscacsascascsac</Text>
+// </View>
 
 
-            <View style={{ backgroundColor: "#ECE5DD", width:"auto", height: "auto", borderRadius: 10 }}>
+// <View style={{height:10,backgroundColor:"red",justifyContent:"flex-end",alignItems:"flex-end"}}>
+//     <View style={{width:70,height:25,backgroundColor:"pink"}}>
+//         <Text>12:00</Text>
+//     </View>
 
+// </View>
 
+//     </View>
 
-                {/* <View style={{backgroundColor:"green",width:"auto",height:"auto"}}> */}
-
-
-                <View style={{ flexDirection: "row", height: "auto",width:"auto",display:"flex",alignItems:"flex-end" }}>
-                    <Text style={{ backgroundColor: "grey",maxWidth:200,padding:5}}>acacascaacaacacacacsacacasascaaascacacascsaacacascacacaccaccaccas </Text>  
-
-
-
-
-                        <View style={{ flexDirection: "row", height: 18, width: 50,justifyContent:"flex-end",alignItems:"flex-end"}}>
-                            <View style={{ width: 25, height: 18, paddingTop: 4 }}>
-                                <Text style={{ fontSize: 9, color: "grey" }}>11:16</Text>
-                            </View>
-
-                            <View style={{ width: 22, height: 18, paddingTop: 3 }}>
-
-
-                                <DoubleTick color={"#3498DB"} />
-
-                            </View>
-
-                        </View>
-                       
-
-                         
-                     
-
-                 
-                </View>
-
-
-            </View>
-
-        </View>
-
-
-
-
-// <View style={{width:200,backgroundColor:"red",flexDirection:"row",flexWrap:"wrap"}}>
-//             <View style={{flexDirection:"row",width:200,alignItems:"flex-end",justifyContent:"flex-start"}}>
-//                 <Text style={{maxWidth:200,width:"auto",flexDirection:"row"}}>hsdvsvsscacascasacasacsascascacacc 
-           
-
-
-//                              <View style={{ flexDirection: "row", height: 18, width: "auto",justifyContent:"flex-end",alignItems:"flex-end"}}>
-//                              <View style={{ width: 25, height: 18, paddingTop: 4 }}>
-//                                  <Text style={{ fontSize: 9, color: "grey" }}>11:16</Text>
-//                              </View>
-
-//                              <View style={{ width: 22, height: 18, paddingTop: 3 }}>
-
-
-//                                  <DoubleTick color={"#3498DB"} />
-
-//                             </View>
-
-//                          </View>
-
-//                          </Text>
-
-//           </View>
 
 // </View>
 
 
 
+
+
+//My Method
+<View style={{maxWidth:"70%",justifyContent:"center",alignItems:"flex-start",marginLeft:5}}>
+    <View style={{borderRadius:5,backgroundColor:"#ECE5DD",borderRadius:5,position:"relative",margin:3}}>
+    <View
+         style={styles.triangle}>
+     </View>
+
+     <View style={{paddingHorizontal:10,paddingVertical:5,alignItems:"center"}}>
+         <Text>{tetDikhana.message}
+             <Text style={{color:"#ECE5DD"}}>AAAAAA</Text>
+         </Text>
+     </View>
+
+     <View style={{position:"absolute",bottom:0,right:0,marginHorizontal:5,marginBottom:3}}>
+             
+                              <View style={{ flexDirection: "row", height: 18, width: "auto",justifyContent:"flex-end",alignItems:"flex-end"}}>
+                              <View style={{ width: 25, height: 18, paddingTop: 4 }}>
+                                  <Text style={{ fontSize: 9, color: "grey" }}>11:16</Text>
+                              </View>
+
+                             <View style={{ width: 22, height: 18, paddingTop: 3 }}>
+                                  <DoubleTick color={"#3498DB"} />
+
+                             </View>
+
+                          </View>
+
+     </View>
+
+    </View>
+
+</View>
 
     )
 }

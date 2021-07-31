@@ -12,6 +12,10 @@ target 'AssignmentsForReactNative' do
     :hermes_enabled => false
   )
 
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  pod 'RNCMaskedView', :path => '../node_modules/@react-native-community/masked-view'
+
   target 'AssignmentsForReactNativeTests' do
     inherit! :complete
     # Pods for testing

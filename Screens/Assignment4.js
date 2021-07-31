@@ -29,14 +29,12 @@ const Assignment4 = () => {
 
               
 
-                <View style={{width:"100%",height:"90%"}}>
+                <View style={{width:"100%",height:"89%",marginTop:5}}>
                     <ScrollView contentContainerStyle={{ width: "100%", flexDirection: "column" }} showsVerticalScrollIndicator={false}>
 
                
-                    <SendMessageView tetDikhana={"hamza"} />
 
-
-                        {/* {SendBtnPress.map((item, index) => {
+                        {SendBtnPress.map((item, index) => {
                             return (
 
                                 <View key={index}>
@@ -49,7 +47,7 @@ const Assignment4 = () => {
                             )
                         })
 
-                        } */}
+                        }
 
                     </ScrollView>
                 </View>
