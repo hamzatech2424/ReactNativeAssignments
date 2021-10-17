@@ -12,6 +12,8 @@ export const AddTask = (  tasktoPerform,id) => {
 
 
 
+
+
 export const DeleteTask = (dataId) => {
 
     return{
@@ -85,6 +87,18 @@ export const AfterEditSaveTask = (dataId,valued) => {
 
 
 
+// export const LocationAddKrni = (  fromdata,id) => {
+        
+//  console.log(fromdata,id,"actionssay")
+
+//     return {
+//         type:"ADD_LOCATION",
+//         payload:{
+//             dataAgya:fromdata,
+//             autoIncreid:id, 
+//         }
+//     }
+// }
 
 
 
